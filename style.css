@@ -1,0 +1,161 @@
+
+:root {
+    --green: #B9FF66;
+    --black: #000000;
+    --gray: #F3F3F3;
+    --text-gray: #555555;
+    --radius-lg: 32px;
+    --radius-md: 20px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+    line-height: 1.6;
+  }
+  
+  /* NAVBAR */
+  .navbar-brand {
+    font-weight: 800;
+    font-size: 22px;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #000;
+  }
+  
+  /* HERO */
+  .hero {
+    padding: 80px 0;
+  }
+  
+  .hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: var(--text-gray);
+    max-width: 480px;
+  }
+  
+  .hero img {
+    max-width: 95%;
+  }
+  
+  /* LOGOS */
+  .logos span {
+    font-weight: 600;
+    opacity: 0.6;
+  }
+  
+  /* SERVICES */
+  .service-card {
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    background: var(--gray);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .service-card.green {
+    background: var(--green);
+  }
+  
+  .service-card h5 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .service-card a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* PROCESS */
+  .accordion-item {
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #000;
+  }
+  
+  .accordion-button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px 30px;
+    background: white;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background: var(--green);
+    color: #000;
+  }
+  
+  .accordion-body {
+    padding: 25px 30px;
+    font-size: 16px;
+  }
+  
+  /* CONTACT */
+  .contact-form {
+    background: var(--gray);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    max-width: 520px;
+  }
+  
+  .form-control {
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+  }
+  
+  /* BUTTONS */
+  .btn-dark {
+    border-radius: 999px;
+    padding: 12px 28px;
+    font-weight: 600;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .hero h1 {
+      font-size: 44px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      text-align: center;
+    }
+  
+    .hero p {
+      margin: 0 auto 20px;
+    }
+  
+    .hero img {
+      margin-top: 40px;
+    }
+  
+    .service-card {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 34px;
+    }
+  
+    .accordion-button {
+      font-size: 18px;
+    }
+  }
